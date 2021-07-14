@@ -5,11 +5,9 @@ import api from '../../services/api';
 import Food from '../../components/Food';
 import { ModalAddFood } from '../../components/ModalAddFood';
 import { ModalEditFood } from '../../components/ModalEditFood';
-import { Food as IFood } from '../../types';
+import { Food as IFood, FoodInput } from '../../types';
 
 import { FoodsContainer } from './styles';
-
-type FoodInput = Omit<IFood, 'id' | 'available'>;
 
 export function Dashboard() {
   const [foods, setFoods] = useState<IFood[]>([]);

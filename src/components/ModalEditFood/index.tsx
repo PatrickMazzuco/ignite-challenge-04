@@ -5,9 +5,7 @@ import { FormHandles, SubmitHandler } from '@unform/core';
 import { Form } from './styles';
 import Modal from '../Modal';
 import Input from '../Input';
-import { Food } from '../../types';
-
-type FoodInput = Omit<Food, 'id' | 'available'>;
+import { Food, FoodInput } from '../../types';
 
 interface ModalEditFoodProps {
   isOpen: boolean;
